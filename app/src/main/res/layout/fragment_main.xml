@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearVerticalStyle.Match">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <LinearLayout
+            style="@style/LinearVerticalStyle.Match"
+            android:gravity="center">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_main_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/bg_c_st_white_normal"
+            app:columnCount="3"
+            app:rowCount="3">
+
+            <RelativeLayout
+                android:id="@+id/rl_status_normal"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_normal_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_normal" />
+
+                <TextView
+                    android:id="@+id/tv_status_normal_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_normal_img"
+                    android:layout_alignTop="@id/iv_status_normal_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_normal_img"
+                    android:text="正常" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_status_reapir"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_repair_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_repair" />
+
+                <TextView
+                    android:id="@+id/tv_status_repair_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_repair_img"
+                    android:layout_alignTop="@id/iv_status_repair_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_repair_img"
+                    android:text="故障" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_status_check"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_check_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_check" />
+
+                <TextView
+                    android:id="@+id/tv_status_check_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_check_img"
+                    android:layout_alignTop="@id/iv_status_check_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_check_img"
+                    android:text="待验收" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_status_maintenance"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_maintenance_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_maintenance" />
+
+                <TextView
+                    android:id="@+id/tv_status_maintenance_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_maintenance_img"
+                    android:layout_alignTop="@id/iv_status_maintenance_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_maintenance_img"
+                    android:text="待保养" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_status_maintenance_keeping"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_maintenance_keeping_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_maintenance_keeping" />
+
+                <TextView
+                    android:id="@+id/tv_status_maintenance_keeping_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_maintenance_keeping_img"
+                    android:layout_alignTop="@id/iv_status_maintenance_keeping_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_maintenance_keeping_img"
+                    android:text="保养中" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_status_inspection"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_inspection_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_inspection" />
+
+                <TextView
+                    android:id="@+id/tv_status_inspection_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_inspection_img"
+                    android:layout_alignTop="@id/iv_status_inspection_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_inspection_img"
+                    android:text="待巡检" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_status_repair_keeping"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_repair_keeping_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_repair_keeping" />
+
+                <TextView
+                    android:id="@+id/tv_status_repair_keeping_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_repair_keeping_img"
+                    android:layout_alignTop="@id/iv_status_repair_keeping_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_repair_keeping_img"
+                    android:text="维修中" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_status_repair_waiting"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_repair_waiting_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_repair_waiting" />
+
+                <TextView
+                    android:id="@+id/tv_status_repair_waiting_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_repair_waiting_img"
+                    android:layout_alignTop="@id/iv_status_repair_waiting_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_repair_waiting_img"
+                    android:text="待维修" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_status_error"
+                style="@style/RelativeStatusItemStyle"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1"
+                app:layout_rowWeight="1">
+
+                <ImageView
+                    android:id="@+id/iv_status_error_img"
+                    style="@style/ImageStatusItemStyle"
+                    app:srcCompat="@drawable/ic_v_status_disable" />
+
+                <TextView
+                    android:id="@+id/tv_status_error_count"
+                    style="@style/TextStatusItemStyle"
+                    android:layout_alignRight="@id/iv_status_error_img"
+                    android:layout_alignTop="@id/iv_status_error_img"
+                    tools:text="100" />
+
+                <TextView
+                    style="@style/TextMainItemStyle"
+                    android:layout_below="@id/iv_status_error_img"
+                    android:text="停用报废" />
+            </RelativeLayout>
+        </android.support.v7.widget.GridLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <View
+        style="@style/ViewDividerStyle.Gray"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_tab_check"
+            style="@style/TextMainTabItemStyle"
+            android:drawableTop="@drawable/ic_tab_result"
+            android:text="验收" />
+
+        <TextView
+            android:id="@+id/tv_tab_inspection"
+            style="@style/TextMainTabItemStyle"
+            android:drawableTop="@drawable/ic_tab_inspection"
+            android:text="巡检" />
+
+        <TextView
+            android:id="@+id/tv_tab_main"
+            style="@style/TextMainTabItemStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableTop="@drawable/ic_tab_main"
+            android:focusable="true"
+            android:text="首页"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/tv_tab_repair"
+            style="@style/TextMainTabItemStyle"
+            android:drawableTop="@drawable/ic_tab_repair"
+            android:text="维修" />
+
+        <TextView
+            android:id="@+id/tv_tab_maintenance"
+            style="@style/TextMainTabItemStyle"
+            android:drawableTop="@drawable/ic_tab_maintenance"
+            android:text="保养" />
+    </LinearLayout>
+</LinearLayout>

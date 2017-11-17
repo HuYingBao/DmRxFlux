@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/dp_24"
+    android:height="@dimen/dp_24"
+    android:viewportHeight="1024.0"
+    android:viewportWidth="1024.0">
+    <path
+        android:fillColor="@color/status_device_repair"
+        android:pathData="M512,12.5C236.1,12.5 10.4,236.1 10.4,512s223.6,499.5 499.5,499.5 499.5,-223.6 499.5,-499.5S787.9,12.5 512,12.5L512,12.5zM512,840.1c-33.4,0 -60.6,-27.2 -60.6,-60.6 0,-33.4 27.2,-60.6 60.6,-60.6 33.4,0 60.6,27.2 60.6,60.6C570.5,812.9 545.4,840.1 512,840.1L512,840.1zM572.6,601.9c0,33.4 -27.2,60.6 -60.6,60.6 -33.4,0 -60.6,-27.2 -60.6,-60.6L451.4,242.4c0,-33.4 27.2,-60.6 60.6,-60.6 33.4,0 60.6,27.2 60.6,60.6L572.6,601.9 572.6,601.9z" />
+</vector>

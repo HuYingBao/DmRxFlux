@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeItemStyle">
+
+    <TextView
+        android:id="@+id/tv_maintenance_rank"
+        style="@style/TextRankStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp_2"
+        tools:background="@drawable/bg_o_so_red"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_maintenance_id"
+        style="@style/TextCodeStyle"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_toRightOf="@id/tv_maintenance_rank"
+        tools:text="12343451" />
+
+    <TextView
+        android:id="@+id/tv_maintenance_duration"
+        style="@style/TextDeviceNameStyle.Item"
+        android:layout_below="@id/tv_maintenance_id"
+        tools:text="用时：148天8小时45分" />
+
+    <ImageView
+        android:id="@+id/iv_maintenance_result"
+        style="@style/ImageItemLargeResultStyle"
+        tools:src="@drawable/ic_v_large_result_no_start" />
+
+    <TextView
+        android:id="@+id/tv_maintenance_user"
+        style="@style/TextDeviceNameStyle.Item"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_maintenance_id"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_toLeftOf="@id/iv_maintenance_result"
+        tools:text="维修员" />
+
+    <TextView
+        android:id="@+id/tv_maintenance_time"
+        style="@style/TextVersionStyle"
+        android:layout_below="@id/tv_maintenance_duration"
+        tools:text="2017-01-24" />
+
+</RelativeLayout>

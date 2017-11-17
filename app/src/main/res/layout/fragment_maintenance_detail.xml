@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearInfoRootStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_maintenance_device_code"
+            style="@style/TextCodeStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            tools:text="设备编号:A-QX-00-01" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_device_name"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_maintenance_device_code"
+            tools:text="设备名称:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_time"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_maintenance_device_name"
+            tools:text="保养时间:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_user"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_maintenance_time"
+            tools:text="保养员:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_duration"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_maintenance_user"
+            tools:text="维修用时:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_plan_date"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_maintenance_duration"
+            tools:text="计划日期:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_result"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_maintenance_plan_date"
+            tools:text="未开始" />
+
+        <ImageView
+            android:id="@+id/iv_maintenance_result"
+            style="@style/ImageResultStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            tools:src="@drawable/ic_v_result_success" />
+
+
+        <TextView
+            android:id="@+id/tv_maintenance_rank"
+            style="@style/TextRankStyle"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_toLeftOf="@id/iv_maintenance_result"
+            tools:background="@drawable/bg_o_so_red"
+            tools:text="1" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_weight="1">
+
+        <LinearLayout style="@style/LinearVerticalStyle.MatchWidth">
+
+            <TextView
+                android:id="@+id/tv_maintenance_fault_cause"
+                style="@style/TextDetailContentStyle"
+                tools:text="@string/error_invalid_password" />
+
+            <TextView
+                android:id="@+id/tv_maintenance_pause_explain"
+                style="@style/TextDetailContentStyle"
+                tools:text="@string/error_invalid_password" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/ViewDividerStyle.Gray.Detail" />
+
+    <LinearLayout style="@style/LinearHorizontalStyle.MatchWidth">
+
+        <TextView
+            android:id="@+id/tv_maintenance_item"
+            style="@style/TextActionStyle"
+            android:text="@string/title_maintenance_item" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_device_part"
+            style="@style/TextActionStyle"
+            android:text="@string/title_device_part" />
+
+        <TextView
+            android:id="@+id/tv_maintenance_check"
+            style="@style/TextActionStyle"
+            android:text="@string/title_check_list" />
+    </LinearLayout>
+
+</LinearLayout>

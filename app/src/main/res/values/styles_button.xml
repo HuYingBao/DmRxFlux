@@ -1,0 +1,16 @@
+<resources>
+    <!--按钮样式-->
+    <style name="ButtonCustomStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bg_click_btn_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="ButtonLoginStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_44</item>
+        <item name="android:background">@drawable/bg_click_btn_login</item>
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+</resources>

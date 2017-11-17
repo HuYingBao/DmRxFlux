@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_300"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_c_so_white_normal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:text="备品备件使用"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/sp_16" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_content"
+        style="@style/RecyclerViewStyle"
+        android:layout_height="@dimen/dp_300"
+        android:layout_margin="@dimen/dp_10" />
+
+    <View style="@style/ViewDividerStyle.Gray" />
+
+    <LinearLayout style="@style/LinearLayoutBottomButtonStyle">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/TextViewButtonStyle.Bottom"
+            android:text="@string/action_cancel" />
+
+        <View style="@style/ViewVerticalDividerStyle.Gray" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            style="@style/TextViewButtonStyle.Bottom"
+            android:text="@string/action_ok" />
+    </LinearLayout>
+
+</LinearLayout>

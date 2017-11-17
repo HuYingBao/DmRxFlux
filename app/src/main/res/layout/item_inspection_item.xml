@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ItemStyle.Inspection"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_inspection_item_content"
+        style="@style/TextItemContentStyle"
+        tools:text="15天15天15天15天15天15天15天15天15天" />
+
+    <ImageView
+        android:id="@+id/iv_inspection_item_result"
+        style="@style/ImageResultStyle"
+        tools:src="@drawable/ic_v_result_success"
+        tools:visibility="gone" />
+
+    <LinearLayout
+        style="@style/LinearVerticalStyle.Wrap"
+        android:gravity="center_horizontal">
+
+        <com.huyingbao.rxflux2.widget.switchview.SwitchView
+            android:id="@+id/sw_inspection_item_result"
+            style="@style/SwitchViewStyle" />
+
+        <TextView
+            android:id="@+id/tv_inspection_item_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_10"
+            tools:text="1234"
+            tools:textColor="@color/result_normal" />
+    </LinearLayout>
+</LinearLayout>

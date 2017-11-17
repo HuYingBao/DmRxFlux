@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearVerticalStyle.Match">
+
+    <TextView
+        style="@style/TextDetailTitleStyle"
+        android:text="保养前情况说明" />
+
+    <EditText
+        android:id="@+id/et_maintenance_pre_explain"
+        style="@style/EditDetailContentStyle"
+        tools:text="@string/error_invalid_password" />
+
+    <TextView
+        style="@style/TextDetailTitleStyle"
+        android:text="备注" />
+
+    <EditText
+        android:id="@+id/et_maintenance_remark"
+        style="@style/EditDetailContentStyle"
+        tools:text="@string/error_invalid_password" />
+
+    <TextView
+        android:id="@+id/tv_maintain_item"
+        style="@style/TextDetailTitleStyle"
+        android:text="保养项"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>

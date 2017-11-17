@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeItemStyle">
+
+    <ImageView
+        android:id="@+id/iv_message_img"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_logo" />
+
+    <TextView
+        android:id="@+id/tv_message_content"
+        style="@style/TextCodeStyle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/iv_message_img"
+        android:textSize="@dimen/sp_14"
+        tools:text="A-QX-00-01" />
+
+    <TextView
+        android:id="@+id/tv_message_status"
+        style="@style/TextStatusStyle"
+        android:layout_below="@id/tv_message_content"
+        android:layout_marginRight="@dimen/dp_6"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/iv_message_img"
+        tools:background="@drawable/bg_c_so_primary_normal"
+        tools:text="正常" />
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        style="@style/TextVersionStyle"
+        android:layout_below="@id/tv_message_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/tv_message_status"
+        tools:text="型号:THK" />
+
+</RelativeLayout>

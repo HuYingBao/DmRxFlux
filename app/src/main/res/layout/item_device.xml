@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeItemStyle">
+
+    <ImageView
+        android:id="@+id/iv_device_img"
+        android:layout_width="@dimen/dp_72"
+        android:layout_height="@dimen/dp_72"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:scaleType="centerInside"
+        tools:src="@mipmap/ic_logo" />
+
+    <TextView
+        android:id="@+id/tv_maintenance_rank"
+        style="@style/TextRankStyle"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_toRightOf="@id/iv_device_img"
+        android:visibility="gone"
+        tools:background="@drawable/bg_o_so_red"
+        tools:text="1"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_device_status"
+        style="@style/TextStatusStyle"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_toRightOf="@id/tv_maintenance_rank"
+        tools:background="@drawable/bg_c_so_primary_normal"
+        tools:text="正常" />
+
+    <TextView
+        android:id="@+id/tv_device_code"
+        style="@style/TextCodeStyle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tv_device_status"
+        tools:text="A-QX-00-01" />
+
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        style="@style/TextDeviceNameStyle.Item"
+        android:layout_below="@id/tv_device_code"
+        android:layout_toRightOf="@id/iv_device_img"
+        tools:text="喷胶机" />
+
+    <TextView
+        android:id="@+id/tv_device_type"
+        style="@style/TextVersionStyle"
+        android:layout_below="@id/tv_device_name"
+        android:layout_toRightOf="@id/iv_device_img"
+        tools:text="型号:THK" />
+
+    <RatingBar
+        android:id="@+id/rb_device_degree"
+        style="@style/RatingBarStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        tools:rating="1" />
+
+</RelativeLayout>

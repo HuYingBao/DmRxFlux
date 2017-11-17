@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearVerticalStyle.Match"
+    app:navigationIcon="@drawable/ic_v_action_back">
+
+    <include layout="@layout/view_tool_bar" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        style="@style/FrameLayoutStyle" />
+</LinearLayout>

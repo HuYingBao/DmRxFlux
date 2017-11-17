@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_dm_name">宝丰设备管理系统</string>
+
+    <string name="user_name">用户名</string>
+    <string name="user_password">密码</string>\
+
+    <string name="action_login">登录</string>
+    <string name="action_login_auto">自动登录</string>
+
+    <string name="error_invalid_user_name">请输入用户名</string>
+    <string name="error_invalid_password">请输入密码</string>
+
+    <string name="navigation_drawer_open">打开</string>
+    <string name="navigation_drawer_close">关闭</string>
+
+    <string name="title_main">首页</string>
+
+    <string name="title_show_img">图片展示</string>
+    <string name="title_message">我的消息</string>
+
+    <string name="title_device_list">设备列表</string>
+    <string name="title_device_detail">设备详情</string>
+    <string name="title_device_contract">技术合同</string>
+    <string name="title_device_document">技术文档</string>
+    <string name="title_device_record">调试记录</string>
+    <string name="title_device_part">备件记录</string>
+
+    <string name="title_check">设备验收</string>
+    <string name="title_check_list">验收记录</string>
+
+    <string name="title_inspection">设备巡检</string>
+    <string name="title_inspection_detail">巡检记录</string>
+
+    <string name="title_repair">设备维修</string>
+    <string name="title_repair_detail">维修记录</string>
+
+    <string name="title_maintenance">设备保养</string>
+    <string name="title_maintenance_detail">保养记录</string>
+    <string name="title_maintenance_item">保养项</string>
+
+    <string name="action_check_pass">通过</string>
+    <string name="action_check_fail">不通过</string>
+
+    <string name="action_repair_scan">扫码维修</string>
+    <string name="action_repair_start">开始维修</string>
+    <string name="action_repair_restart">继续维修</string>
+    <string name="action_repair_pause">维修暂停</string>
+    <string name="action_repair_finish">维修完成</string>
+
+    <string name="action_maintenance_scan">扫码保养</string>
+    <string name="action_maintenance_start">开始保养</string>
+    <string name="action_maintenance_restart">继续保养</string>
+    <string name="action_maintenance_pause">保养暂停</string>
+    <string name="action_maintenance_finish">保养结束</string>
+
+
+    <string name="action_inspection_scan">扫码巡检</string>
+    <string name="action_inspection_start">开始巡检</string>
+    <string name="action_inspection_finish">巡检结束</string>
+
+    <string name="action_device_part">备品备件使用</string>
+    <string name="sys_info">系统提示</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确定</string>
+</resources>

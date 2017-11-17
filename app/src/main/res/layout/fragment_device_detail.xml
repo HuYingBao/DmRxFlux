@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollDetailContentStyle">
+
+    <LinearLayout style="@style/LinearInfoRootStyle">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_device_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200" />
+
+        <com.huyingbao.rxflux2.widget.circleindicator.CirclePageIndicator
+            android:id="@+id/cpid_device_imgs"
+            style="@style/CirclePageStyle"
+            android:layout_marginTop="@dimen/dp_030" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/tv_device_status"
+                style="@style/TextStatusStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dp_2"
+                tools:background="@drawable/bg_c_so_primary_normal"
+                tools:text="正常" />
+
+            <TextView
+                android:id="@+id/tv_device_code"
+                style="@style/TextCodeStyle"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_toRightOf="@id/tv_device_status"
+                tools:text="A-QX-00-01" />
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                style="@style/TextDeviceNameStyle.Detail"
+                android:layout_below="@id/tv_device_status"
+                tools:text="喷胶机" />
+
+            <RatingBar
+                android:id="@+id/rb_device_degree"
+                style="@style/RatingBarStyle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                tools:rating="1" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/ViewDividerStyle.Gray"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <LinearLayout style="@style/LinearHorizontalStyle.MatchWidth">
+
+            <LinearLayout
+                style="@style/LinearVerticalStyle.Wrap"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_device_type"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="型号：喷胶机" />
+
+                <TextView
+                    android:id="@+id/tv_device_power"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="功率：喷胶机" />
+
+                <TextView
+                    android:id="@+id/tv_device_complex_jf"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="复杂系数:JF：喷胶机" />
+
+                <TextView
+                    android:id="@+id/tv_device_dprc_period"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="折旧年限：喷胶机" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearVerticalStyle.Wrap"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_device_service_date"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="投产日期：喷胶机" />
+
+                <TextView
+                    android:id="@+id/tv_device_price"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="原值：喷胶机" />
+
+                <TextView
+                    android:id="@+id/tv_device_complex_df"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="DF：喷胶机" />
+
+                <TextView
+                    android:id="@+id/tv_device_duration"
+                    style="@style/TextDetailItemStyle"
+                    tools:text="总故障时间：喷胶机" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_device_org"
+            style="@style/TextDetailItemStyle"
+            tools:text="使用部门：喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_device_manufacturer"
+            style="@style/TextDetailItemStyle"
+            tools:text="制造厂家：喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_device_remark"
+            style="@style/TextDetailItemStyle"
+            tools:text="备注：喷胶机" />
+
+        <View
+            style="@style/ViewDividerStyle.Gray"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <LinearLayout
+            style="@style/LinearHorizontalStyle.MatchWidth"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_device_contract"
+                style="@style/TextActionStyle"
+                android:text="@string/title_device_contract" />
+
+            <TextView
+                android:id="@+id/tv_device_document"
+                style="@style/TextActionStyle"
+                android:text="@string/title_device_document" />
+
+            <TextView
+                android:id="@+id/tv_device_record"
+                style="@style/TextActionStyle"
+                android:text="@string/title_device_record" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearHorizontalStyle.MatchWidth"
+            android:layout_marginTop="@dimen/dp_10"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_device_start"
+                style="@style/TextActionStyle"
+                android:text="开机" />
+
+            <TextView
+                android:id="@+id/tv_device_stop"
+                style="@style/TextActionStyle"
+                android:text="关机" />
+
+            <TextView
+                android:id="@+id/tv_device_warning"
+                style="@style/TextActionStyle"
+                android:text="警告" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearHorizontalStyle.MatchWidth"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_device_disable"
+                style="@style/TextActionStyle"
+                android:text="停用"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_device_scrap"
+                style="@style/TextActionStyle"
+                android:text="报废"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_device_repair"
+                style="@style/TextActionStyle"
+                android:text="报修"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

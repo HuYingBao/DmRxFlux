@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeItemStyle">
+
+    <TextView
+        android:id="@+id/tv_repair_type"
+        style="@style/TextStatusStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/dp_2"
+        tools:background="@drawable/bg_c_so_primary_normal"
+        tools:text="设备" />
+
+    <TextView
+        android:id="@+id/tv_repair_id"
+        style="@style/TextCodeStyle"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_toRightOf="@id/tv_repair_type"
+        tools:text="12343451" />
+
+    <TextView
+        android:id="@+id/tv_repair_duration"
+        style="@style/TextDeviceNameStyle.Item"
+        android:layout_below="@id/tv_repair_id"
+        tools:text="用时：148天8小时45分" />
+
+    <ImageView
+        android:id="@+id/iv_repair_result"
+        style="@style/ImageItemLargeResultStyle"
+        tools:src="@drawable/ic_v_large_result_check" />
+
+    <TextView
+        android:id="@+id/tv_repair_user"
+        style="@style/TextDeviceNameStyle.Item"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_repair_id"
+        android:layout_toLeftOf="@id/iv_repair_result"
+        tools:text="维修员" />
+
+    <TextView
+        android:id="@+id/tv_repair_informant_time"
+        style="@style/TextVersionStyle"
+        android:layout_below="@id/tv_repair_duration"
+        tools:text="2017-01-24" />
+
+</RelativeLayout>

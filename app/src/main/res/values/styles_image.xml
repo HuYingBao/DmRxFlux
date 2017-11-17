@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="ImageStatusItemStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
+    </style>
+
+    <style name="ImageResultStyle">
+        <item name="android:layout_width">@dimen/dp_20</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="ImageItemLargeResultStyle">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_300"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_c_so_white_normal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:text="选择服务器地址"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/sp_16" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_server_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="内网服务器"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/et_server_in"
+            style="@style/EditServerStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_server_in"
+            android:hint="请输入内容"
+            tools:hint="192.169.168.199" />
+
+        <CheckBox
+            android:id="@+id/cb_server_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_server_in"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/et_server_in"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_server_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="外网服务器"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/et_server_out"
+            style="@style/EditServerStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tv_server_out"
+            android:hint="请输入内容"
+            tools:hint="192.169.168.199" />
+
+        <CheckBox
+            android:id="@+id/cb_server_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_server_out"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/et_server_out"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/ViewDividerStyle.Gray" />
+
+    <LinearLayout style="@style/LinearLayoutBottomButtonStyle">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/TextViewButtonStyle.Bottom"
+            android:text="@string/action_cancel" />
+
+        <View style="@style/ViewVerticalDividerStyle.Gray" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            style="@style/TextViewButtonStyle.Bottom"
+            android:text="@string/action_ok" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearInfoRootStyle">
+
+    <TextView
+        android:id="@+id/tv_repair_duration"
+        style="@style/TextCodeStyle"
+        android:layout_marginTop="@dimen/dp_10"
+        tools:text="维修用时:A-QX-00-01" />
+
+    <TextView
+        android:id="@+id/tv_repair_informant_name"
+        style="@style/TextDetailItemStyle"
+        tools:text="报修人:喷胶机" />
+
+    <TextView
+        android:id="@+id/tv_repair_informant_time"
+        style="@style/TextDetailItemStyle"
+        tools:text="报修时间:喷胶机" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_device_part"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearExpandItemStyle">
+
+    <TextView
+        android:id="@+id/tv_maintain_item_content"
+        style="@style/TextItemContentStyle"
+        tools:text="2017-01-29" />
+
+    <ImageView
+        android:id="@+id/iv_maintain_item_content_result"
+        style="@style/ImageResultStyle"
+        android:layout_marginLeft="@dimen/dp_20"
+        tools:src="@drawable/ic_v_result_success" />
+
+    <com.huyingbao.rxflux2.widget.switchview.SwitchView
+        android:id="@+id/sw_maintain_item_result"
+        style="@style/SwitchViewStyle"
+        android:layout_marginLeft="@dimen/dp_4" />
+</LinearLayout>

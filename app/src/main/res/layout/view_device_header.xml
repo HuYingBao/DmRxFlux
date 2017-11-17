@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearVerticalStyle.MatchWidth">
+
+    <LinearLayout style="@style/LinearHorizontalStyle.MatchWidth">
+
+        <TextView
+            android:id="@+id/tv_device_status_all"
+            style="@style/TextMainTabItemStyle.Device"
+            android:text="所有" />
+
+        <View style="@style/ViewVerticalDividerStyle.Gray.Device" />
+
+        <TextView
+            android:id="@+id/tv_device_status_normal"
+            style="@style/TextMainTabItemStyle.Device"
+            android:text="正常" />
+
+        <View style="@style/ViewVerticalDividerStyle.Gray.Device" />
+
+        <TextView
+            android:id="@+id/tv_device_status_repair"
+            style="@style/TextMainTabItemStyle.Device"
+            android:text="故障" />
+
+        <View style="@style/ViewVerticalDividerStyle.Gray.Device" />
+
+        <TextView
+            android:id="@+id/tv_device_status_repair_keeping"
+            style="@style/TextMainTabItemStyle.Device"
+            android:text="维修中" />
+
+        <View style="@style/ViewVerticalDividerStyle.Gray.Device" />
+
+        <TextView
+            android:id="@+id/tv_device_status_filter"
+            style="@style/TextMainTabItemStyle.Device"
+            android:drawableLeft="@drawable/ic_action_filter"
+            android:drawablePadding="@dimen/dp_4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="筛选" />
+    </LinearLayout>
+
+    <View style="@style/ViewDividerStyle.Gray" />
+</LinearLayout>

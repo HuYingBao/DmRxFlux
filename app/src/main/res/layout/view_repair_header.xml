@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearVerticalStyle.Match">
+
+    <TextView
+        style="@style/TextDetailTitleStyle"
+        android:text="故障问题及原因" />
+
+    <EditText
+        android:id="@+id/et_repair_fault_cause"
+        style="@style/EditDetailContentStyle"
+        tools:text="@string/error_invalid_password" />
+
+    <TextView
+        style="@style/TextDetailTitleStyle"
+        android:text="维修方案" />
+
+    <EditText
+        android:id="@+id/et_repair_scheme"
+        style="@style/EditDetailContentStyle"
+        tools:text="@string/error_invalid_password" />
+
+    <TextView
+        style="@style/TextDetailTitleStyle"
+        android:text="备注" />
+
+    <EditText
+        android:id="@+id/et_repair_remark"
+        style="@style/EditDetailContentStyle"
+        tools:text="@string/error_invalid_password" />
+
+    <TextView
+        android:id="@+id/tv_device_part"
+        style="@style/TextDetailTitleStyle"
+        android:text="备品备件"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>

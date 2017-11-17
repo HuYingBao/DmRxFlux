@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ItemStyle.LinearLayout">
+
+    <ImageView
+        android:id="@+id/iv_inspection_result"
+        style="@style/ImageResultStyle"
+        android:layout_marginRight="@dimen/dp_20"
+        tools:src="@drawable/ic_v_result_success" />
+
+    <TextView
+        android:id="@+id/tv_inspection_time"
+        style="@style/TextItemContentStyle"
+        tools:text="2017-01-29" />
+
+    <TextView
+        android:id="@+id/tv_inspection_user"
+        style="@style/TextItemInfoStyle"
+        tools:text="巡检员" />
+</LinearLayout>

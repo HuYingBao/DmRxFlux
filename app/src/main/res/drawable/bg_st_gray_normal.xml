@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--灰边-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/dp_04"
+        android:color="@color/divider" />
+</shape>

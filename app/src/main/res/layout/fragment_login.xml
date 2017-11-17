@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearVerticalStyle.Match.Root"
+    tools:context=".ui.login.LoginFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:drawableLeft="@mipmap/ic_logo"
+        android:drawablePadding="@dimen/dp_6"
+        android:gravity="center_vertical"
+        android:text="@string/app_dm_name"
+        android:textColor="@color/primary_white"
+        android:textSize="@dimen/sp_22"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayoutStyle"
+        android:layout_marginTop="@dimen/dp_72"
+        app:hintTextAppearance="@style/TextInputHintTextStyle">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            style="@style/EditInfoStyle"
+            android:drawableLeft="@drawable/ic_login_name"
+            android:hint="@string/user_name"
+            android:maxLength="20" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View style="@style/ViewDividerStyle.White" />
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/TextInputLayoutStyle"
+        app:hintTextAppearance="@style/TextInputHintTextStyle">
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditPasswordStyle"
+            android:drawableLeft="@drawable/ic_login_password"
+            android:hint="@string/user_password"
+            android:imeActionId="@+id/to_login"
+            android:imeActionLabel="@string/action_login"
+            android:imeOptions="actionUnspecified"
+            android:maxLength="20"
+            tools:ignore="InvalidImeActionId" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View style="@style/ViewDividerStyle.White" />
+
+    <LinearLayout
+        style="@style/LinearHorizontalStyle.MatchWidth"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <CheckBox
+            android:id="@+id/cb_login_auto"
+            style="@style/CheckBoxLoginStyle"
+            android:layout_weight="1"
+            android:text="@string/action_login_auto" />
+
+        <TextView
+            android:id="@+id/tv_login_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务器设置"
+            android:textColor="@color/primary_white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/ButtonLoginStyle"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/action_login" />
+
+    <TextView
+        android:id="@+id/tv_login_server_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="内网服务器："
+        android:textColor="@color/primary_white"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/tv_login_server_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="外网服务器："
+        android:textColor="@color/primary_white"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>
+
+

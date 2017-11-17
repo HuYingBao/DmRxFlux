@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearInfoRootStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_inspection_device_code"
+            style="@style/TextCodeStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            tools:text="设备编号:A-QX-00-01" />
+
+        <TextView
+            android:id="@+id/tv_inspection_device_name"
+            style="@style/TextDeviceNameStyle.Detail"
+            android:layout_below="@id/tv_inspection_device_code"
+            tools:text="设备名称:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_inspection_user"
+            style="@style/TextDeviceNameStyle.Detail"
+            android:layout_below="@id/tv_inspection_device_name"
+            tools:text="巡检员:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_inspection_time"
+            style="@style/TextDeviceNameStyle.Detail"
+            android:layout_below="@id/tv_inspection_user"
+            tools:text="巡检日期:喷胶机" />
+
+        <ImageView
+            android:id="@+id/iv_inspection_result"
+            style="@style/ImageResultStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            tools:src="@drawable/ic_v_result_success" />
+
+    </RelativeLayout>
+
+    <View style="@style/ViewDividerStyle.Gray.Detail" />
+
+    <TextView
+        android:id="@+id/tv_inspection_item"
+        style="@style/TextDeviceNameStyle.Detail"
+        android:text="巡检项" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_inspection_item"
+        style="@style/RecyclerViewStyle" />
+
+</LinearLayout>

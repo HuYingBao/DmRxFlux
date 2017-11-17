@@ -1,0 +1,81 @@
+<resources>
+
+    <style name="FrameLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearVerticalStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearVerticalStyle.MatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LinearVerticalStyle.Match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearVerticalStyle.Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LinearVerticalStyle.Match.Root">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:paddingRight">@dimen/dp_40</item>
+        <item name="android:paddingLeft">@dimen/dp_40</item>
+    </style>
+
+    <style name="LinearHorizontalStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LinearHorizontalStyle.MatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ItemStyle.LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/dp_20</item>
+    </style>
+
+    <style name="ItemStyle.Inspection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <style name="LinearInfoRootStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+        <item name="android:paddingLeft">@dimen/dp_20</item>
+        <item name="android:paddingRight">@dimen/dp_20</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+    </style>
+
+    <style name="TextInputLayoutStyle">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_60</item>
+        <item name="android:textColorHint">@color/primary_white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="TextInputHintTextStyle" parent="@style/TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+</resources>

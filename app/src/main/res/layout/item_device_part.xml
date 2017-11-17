@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:background="@drawable/bg_st_gray_normal">
+
+    <TextView
+        android:id="@+id/tv_device_part_name"
+        style="@style/TextTableStyle.Small"
+        android:layout_width="@dimen/dp_72"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        tools:text="1" />
+
+    <View style="@style/ViewVerticalDividerStyle.Gray" />
+
+    <TextView
+        android:id="@+id/tv_device_part_specification"
+        style="@style/TextTableStyle.Small"
+        android:layout_width="0dp"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_weight="1"
+        tools:text="15天" />
+
+    <View style="@style/ViewVerticalDividerStyle.Gray" />
+
+    <TextView
+        android:id="@+id/tv_device_part_quantity"
+        style="@style/TextTableStyle.Small"
+        android:layout_width="@dimen/dp_60"
+        android:layout_marginRight="@dimen/dp_16"
+        android:gravity="right"
+        tools:text="一台" />
+</LinearLayout>

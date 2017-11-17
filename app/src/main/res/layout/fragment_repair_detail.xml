@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearInfoRootStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_repair_device_code"
+            style="@style/TextCodeStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            tools:text="设备编号:A-QX-00-01" />
+
+        <TextView
+            android:id="@+id/tv_repair_device_name"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_repair_device_code"
+            tools:text="设备名称:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_repair_informant_name"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_repair_device_name"
+            tools:text="报修人:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_repair_informant_time"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_repair_informant_name"
+            tools:text="报修时间:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_repair_user"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_repair_informant_time"
+            tools:text="维修员:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_repair_duration"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_repair_user"
+            tools:text="维修用时:喷胶机" />
+
+        <TextView
+            android:id="@+id/tv_repair_result"
+            style="@style/TextDetailItemStyle"
+            android:layout_below="@id/tv_repair_duration"
+            tools:text="未开始" />
+
+        <ImageView
+            android:id="@+id/iv_repair_result"
+            style="@style/ImageResultStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            tools:src="@drawable/ic_v_result_success" />
+
+        <TextView
+            android:id="@+id/tv_repair_type"
+            style="@style/TextStatusStyle"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_toLeftOf="@id/iv_repair_result"
+            tools:background="@drawable/bg_c_so_primary_normal"
+            tools:text="设备" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_weight="1">
+
+        <LinearLayout style="@style/LinearVerticalStyle.MatchWidth">
+
+            <TextView
+                android:id="@+id/tv_repair_fault_cause"
+                style="@style/TextDetailContentStyle"
+                tools:text="原因" />
+
+            <TextView
+                android:id="@+id/tv_repair_scheme"
+                style="@style/TextDetailContentStyle"
+                tools:text="方案" />
+
+            <TextView
+                android:id="@+id/tv_repair_remark"
+                style="@style/TextDetailContentStyle"
+                tools:text="备注" />
+
+            <TextView
+                android:id="@+id/tv_repair_pause_explain"
+                style="@style/TextDetailContentStyle"
+                tools:text="暂停原因" />
+
+            <TextView
+                android:id="@+id/tv_repair_check_opinion"
+                style="@style/TextDetailContentStyle"
+                tools:text="验收意见" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/ViewDividerStyle.Gray.Detail" />
+
+    <LinearLayout style="@style/LinearHorizontalStyle.MatchWidth">
+
+        <TextView
+            android:id="@+id/tv_repair_device_part"
+            style="@style/TextActionStyle"
+            android:text="@string/title_device_part" />
+
+        <TextView
+            android:id="@+id/tv_repair_check"
+            style="@style/TextActionStyle"
+            android:text="@string/title_check_list" />
+    </LinearLayout>
+</LinearLayout>

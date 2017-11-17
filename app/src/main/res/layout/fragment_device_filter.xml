@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_300"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_white"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextFilterStyle"
+        android:text="类型" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_device_filter_type"
+        style="@style/RecyclerFilterStyle"
+        android:layout_height="@dimen/dp_160" />
+
+    <TextView
+        style="@style/TextFilterStyle"
+        android:text="状态" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_device_filter_status"
+        style="@style/RecyclerFilterStyle" />
+
+    <View
+        style="@style/ViewDividerStyle.Gray"
+        android:layout_marginTop="@dimen/dp_20" />
+
+    <LinearLayout style="@style/LinearLayoutBottomButtonStyle">
+
+        <TextView
+            android:id="@+id/tv_device_filter_reset"
+            style="@style/TextViewButtonStyle.Bottom"
+            android:text="重置" />
+
+        <View style="@style/ViewVerticalDividerStyle.Gray" />
+
+        <TextView
+            android:id="@+id/tv_device_filter_ok"
+            style="@style/TextViewButtonStyle.Bottom"
+            android:text="完成" />
+    </LinearLayout>
+</LinearLayout>

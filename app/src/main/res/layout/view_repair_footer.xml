@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearVerticalStyle.Match">
+
+    <View style="@style/ViewDividerStyle.Gray.Detail" />
+
+    <LinearLayout style="@style/LinearHorizontalStyle.MatchWidth">
+
+        <TextView
+            android:id="@+id/tv_repair_device_part"
+            style="@style/TextActionStyle"
+            android:text="@string/action_device_part" />
+
+        <TextView
+            android:id="@+id/tv_repair_device_detail"
+            style="@style/TextActionStyle"
+            android:text="@string/title_device_detail" />
+    </LinearLayout>
+</LinearLayout>
